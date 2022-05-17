@@ -56,8 +56,22 @@ public class ControlFlowExercises {
 //            }
 //        }
         //prompt user for a number between 1 and 100
-
-
+      System.out.println("Enter a number between 1 and 100");
+      if(scanner.nextInt() >= 90 && scanner.nextInt() <= 100) {
+              System.out.println("A");
+          }
+          else if (scanner.nextInt() >= 80 && scanner.nextInt() <= 89) {
+              System.out.println("B");
+          }
+          else if (scanner.nextInt() >= 70 && scanner.nextInt() <= 79) {
+              System.out.println("C");
+          }
+          else if (scanner.nextInt() >= 60 && scanner.nextInt() <= 69) {
+              System.out.println("D");
+          }
+          else if (scanner.nextInt() >= 0 && scanner.nextInt() <= 59) {
+              System.out.println("F");
+      }
     }
     }
 
