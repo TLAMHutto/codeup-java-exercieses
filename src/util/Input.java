@@ -28,7 +28,7 @@ public class Input {
         } while (num < min || num > max);
         return num;
     }
-    public int getInt(String prompt) {
+    public static int getInt(String prompt) {
         System.out.print(prompt);
         return scanner.nextInt();
     }

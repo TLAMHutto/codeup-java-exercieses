@@ -111,20 +111,33 @@ public class MoviesArray {
             System.out.println(movie.getTitle());
         }
     }
-    public static void printAllSelected(Movie[] category, String animated) {
-        for (Movie movie : category) {
-            if (movie.getCategory().equals("animated")) {
-                System.out.println(movie.getTitle());
-            }
-            if (movie.getCategory().equals("drama")) {
-                System.out.println(movie.getTitle());
-            }
-            if (movie.getCategory().equals("comedy")) {
-                System.out.println(movie.getTitle());
-            }
-            if (movie.getCategory().equals("scifi")) {
+    public static void printAllAnimated(Movie[] movies, String animated) {
+        for (Movie movie : movies) {
+            if (movie.getCategory().equals(animated)) {
                 System.out.println(movie.getTitle());
             }
         }
     }
+    public static void printAllDrama(Movie[] movies, String drama) {
+        for (Movie movie : movies) {
+            if (movie.getCategory().equals(drama)) {
+                System.out.println(movie.getTitle());
+            }
+        }
+    }
+    public static void printAllScifi(Movie[] movies, String scifi) {
+        for (Movie movie : movies) {
+            if (movie.getCategory().equals(scifi)) {
+                System.out.println(movie.getTitle());
+            }
+        }
+    }
+    public static void printAllHorror(Movie[] movies, String horror) {
+        for (Movie movie : movies) {
+            if (movie.getCategory().equals(horror)) {
+                System.out.println(movie.getTitle());
+            }
+        }
+    }
+
 }
