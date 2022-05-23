@@ -1,7 +1,5 @@
 package Movies;
 
-import Movies.Movies;
-
 public class MoviesArray {
     public static Movie[] findAll() {
         return new Movie[]{
@@ -106,5 +104,27 @@ public class MoviesArray {
                 new Movie("Guess Who's Coming To Dinner", "drama"),
                 new Movie("Yankee Doodle Dandy", "musical")
         };
+    }
+
+    public static void printAll(Movie[] title) {
+        for (Movie movie : title) {
+            System.out.println(movie.getTitle());
+        }
+    }
+    public static void printAllSelected(Movie[] category, String animated) {
+        for (Movie movie : category) {
+            if (movie.getCategory().equals("animated")) {
+                System.out.println(movie.getTitle());
+            }
+            if (movie.getCategory().equals("drama")) {
+                System.out.println(movie.getTitle());
+            }
+            if (movie.getCategory().equals("comedy")) {
+                System.out.println(movie.getTitle());
+            }
+            if (movie.getCategory().equals("scifi")) {
+                System.out.println(movie.getTitle());
+            }
+        }
     }
 }

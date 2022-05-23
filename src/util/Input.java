@@ -7,7 +7,7 @@ public class Input {
     public Input() {
         scanner = new Scanner(System.in);
     }
-    public String getString(String prompt) {
+    public  String getString(String prompt) {
         System.out.print(prompt);
         return scanner.nextLine();
     }
@@ -47,5 +47,9 @@ public class Input {
     }
     public void close() {
         scanner.close();
+    }
+
+    public int getInt() {
+        return scanner.nextInt();
     }
 }
